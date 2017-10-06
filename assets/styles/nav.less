@@ -1,0 +1,53 @@
+.navigation {
+  background: @nav-bar-background;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+  
+  a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    margin: 10px 5px 10px 5px;
+    color: white;
+  }
+}
+
+
+.navigation a:hover {
+  background: darken(@nav-bar-background, 5%);
+}
+
+.show-menu {
+    text-decoration: none;
+    color: #fff;
+    background: blue;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+/*Hide checkbox*/
+
+/*Show menu when invisible checkbox is checked*/
+
+@media screen and (max-width : 760px){    
+
+    .navigation {
+        display: none;
+        a {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .show-menu {
+        display:block;
+    }   
+}
