@@ -12,7 +12,7 @@
 
 .title-sub-text{
     font-size: @title-sub-text-font-size;
-    width: 50%;
+    width: 60%;
 }
 
 .line{
@@ -31,6 +31,11 @@
     background: @third-panel-line-color;
 }
 
+.fourth-line{
+    .line;
+    background: @fourth-panel-line-color;
+}
+
 .absolute-center{
     align-items: center;
     justify-content: center;
@@ -46,7 +51,25 @@
 
 .row-item{
     .absolute-center;
+    margin: 15px 15px 15px 15px;
     flex-direction: column;
+
+}
+
+.icon-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+}
+
+.icon-row-item{
+    .row-item;
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px 5px 5px;
+    border-radius: 50%;
+    color: @icon-row-item-color;
+    background-color: @icon-row-item-background;
 }
 
 .service-item{
