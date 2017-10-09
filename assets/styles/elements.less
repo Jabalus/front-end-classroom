@@ -56,6 +56,30 @@
     justify-content: center;
     display: flex;
 }
+
+.button {
+    border-radius: 5px;
+    padding: 20px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+.first-button {
+    .button;
+    background-color: @first-panel-button-color;
+    border-bottom: 6px solid @first-panel-button-border-color;
+}
+
+.seventh-button {
+    .button;
+    background-color: @seventh-panel-button-color;
+    border-bottom: 6px solid @seventh-panel-button-border-color;
+}
+
 .row{
     .absolute-center;
     width: 90%;
@@ -124,6 +148,29 @@
     flex-direction: row;
 }
 
+.portfolio-row{
+    .row;
+    padding: 50px;
+    width: 400px;
+}
+
+.portfolio-link{
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: @portfolio-link-font-size;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    background-color: @portfolio-link-color;
+}
+
+.portfolio-link:hover {
+    color: black;
+    background-color: @portfolio-link-active-color;
+}
+
 .testimonial-content{
     flex-direction: column;
     text-align: left;
@@ -148,25 +195,3 @@
     border-radius: 50%;    
 }
 
-.button {
-    border-radius: 5px;
-    padding: 20px 100px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 50px;
-    cursor: pointer;
-    color: white;
-}
-
-.first-button {
-    .button;
-    background-color: @first-panel-button-color;
-    border-bottom: 6px solid @first-panel-button-border-color;
-}
-
-.seventh-button {
-    .button;
-    background-color: @seventh-panel-button-color;
-    border-bottom: 6px solid @seventh-panel-button-border-color;
-}
