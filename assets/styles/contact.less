@@ -1,0 +1,59 @@
+.contact{
+    background-color: @contact-background;
+    color: @contact-color;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: @contact-font-size;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 75%;
+    @media screen and (max-width : 760px){  
+        width: 80%;
+    }
+    
+}
+
+.contact-input-name{
+    .contact;
+    flex: 1;
+    margin-right: 15px;
+}
+
+.contact-input-email{
+    .contact;
+    flex: 1;
+    margin-left: 15px;
+}
+
+.contact-text-area{
+    .contact;
+    width: 100%;
+    resize: none;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: @white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: @white;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: @white;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: @white;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: @white;
+}

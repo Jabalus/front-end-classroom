@@ -12,7 +12,7 @@
 
 .title-sub-text{
     font-size: @title-sub-text-font-size;
-    width: 60%;
+    width: 70%;
 }
 
 .line{
@@ -44,6 +44,11 @@
 .sixth-line{
     .line;
     background: @sixth-panel-line-color;
+}
+
+.seventh-line{
+    .line;
+    background: @seventh-panel-line-color;
 }
 
 .absolute-center{
@@ -125,7 +130,7 @@
     padding: 50px;
     p{
       font-size: @testimonial-font-size;
-      font-weight: italic;
+      font-style: italic;
     }
 
     .testimonial-item-title{
@@ -141,4 +146,27 @@
 .testimonial-image{
     width: 20%;
     border-radius: 50%;    
+}
+
+.button {
+    border-radius: 5px;
+    padding: 20px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+.first-button {
+    .button;
+    background-color: @first-panel-button-color;
+    border-bottom: 6px solid @first-panel-button-border-color;
+}
+
+.seventh-button {
+    .button;
+    background-color: @seventh-panel-button-color;
+    border-bottom: 6px solid @seventh-panel-button-border-color;
 }
