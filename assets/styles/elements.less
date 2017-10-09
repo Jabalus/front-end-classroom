@@ -41,6 +41,11 @@
     background: @fifth-panel-line-color;
 }
 
+.sixth-line{
+    .line;
+    background: @sixth-panel-line-color;
+}
+
 .absolute-center{
     align-items: center;
     justify-content: center;
@@ -99,4 +104,41 @@
 
 .row-item-title-sub-text{
     color: @row-item-title-sub-text-color;
+}
+
+.testimonial-row{
+    .row;      
+}
+
+.testimonial{
+    .absolute-center;
+    @media screen and (max-width : 760px){  
+        width: 100%;
+    }
+    width: 50%;
+    flex-direction: row;
+}
+
+.testimonial-content{
+    flex-direction: column;
+    text-align: left;
+    padding: 50px;
+    p{
+      font-size: @testimonial-font-size;
+      font-weight: italic;
+    }
+
+    .testimonial-item-title{
+        .row-item-title;
+    }
+
+    .testimonial-sub-title{
+        color: @testimonial-sub-title-color;
+    }
+
+}
+
+.testimonial-image{
+    width: 20%;
+    border-radius: 50%;    
 }
