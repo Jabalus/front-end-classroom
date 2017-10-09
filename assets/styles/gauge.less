@@ -1,0 +1,55 @@
+.gauge-container{
+    width: 160px;
+    height: 160px;
+    margin: 50px auto;
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    background-color: #E6F4F7;
+    font-size: @gauge-font-size;
+}
+
+.gauge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    background-color:@empty-gauge-color;
+}
+
+.first-gauge{
+    .gauge;
+    background-image:
+        linear-gradient(90deg, transparent 50%, @first-gauge-color 50%),
+        linear-gradient(54deg, @first-gauge-color 50%, transparent 50%);
+}
+
+.second-gauge{
+    .gauge;
+    background-image:
+        linear-gradient(90deg, transparent 50%, @second-gauge-color 50%),
+        linear-gradient(0deg, @second-gauge-color 50%, transparent 50%);
+}
+
+.third-gauge{
+    .gauge;
+    background-image:
+        linear-gradient(90deg, transparent 50%, @third-gauge-color 50%),
+        linear-gradient(-18deg, @third-gauge-color 50%, transparent 50%);
+}
+
+.fourth-gauge{
+    .gauge;
+    background-image:
+        linear-gradient(90deg, transparent 50%, @fourth-gauge-color 50%),
+        linear-gradient(36deg, @fourth-gauge-color 50%, transparent 50%);
+}
+    
