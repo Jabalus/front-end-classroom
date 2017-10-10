@@ -1,2 +1,1 @@
-console.log('Hello from Webpack');
-require("./assets/styles/app.less");
+import "./assets/styles/app.less";
