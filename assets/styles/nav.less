@@ -1,15 +1,22 @@
+.nav-container{
+    position: fixed;
+    display: inline;
+    margin: 0; 
+    width: 100%;
+    background: @nav-bar-background;
+}
+
 .navigation {
-  background: @nav-bar-background;
-  
+  width: 80%;
+  margin: 0;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  position: fixed;
-  width: 100%;
   -webkit-flex-flow: row wrap;
   justify-content: flex-end;
+  float: right;
   
   a {
     text-decoration: none;
@@ -25,29 +32,49 @@
   background: darken(@nav-bar-background, 5%);
 }
 
-.show-menu {
+.hamburger {
     text-decoration: none;
     color: #fff;
-    background: blue;
     text-align: center;
-    padding: 10px 0;
+    height: 100%;
+    padding: 15px;
+    float: right;
     display: none;
 }
 /*Hide checkbox*/
+.nav-toggle{
+    display: none;
+    height: 50px;
+    float: right;
+}
+.nav-toggle:checked ~ .navigation{
+    display: flex;
+}
 
 /*Show menu when invisible checkbox is checked*/
 
 @media screen and (max-width : 760px){    
-
-    .navigation {
-        display: none;
-        a {
+    .hamburger{
+        display: block;
+    }
+    .nav-container{
+        .navigation {
+            display: none;
             width: 100%;
-            text-align: center;
+            a {
+                width: 100%;
+                text-align: center;
+            }
         }
     }
+}
 
-    .show-menu {
-        display:block;
-    }   
+.nav-brand-container{
+    width: 15%;
+    margin: 10px;
+    float: left;
+}
+
+.nav-brand{
+    width: 100px;
 }
