@@ -59,13 +59,23 @@
 
 .button {
     border-radius: 5px;
-    padding: 20px 100px;
+    padding: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     margin: 50px;
+    width: 200px;
     cursor: pointer;
     color: white;
+}
+
+.item-hover{
+    transition: all .1s ease-out;
+}
+
+.item-hover:hover{
+    transform: scale(1.25);
+    transition: all .15s ease-in;
 }
 
 .first-button {
@@ -95,6 +105,10 @@
 
 }
 
+.row-item-content{
+    height: 200px;
+}
+
 .icon-row{
     display: flex;
     flex-direction: row;
@@ -114,11 +128,13 @@
 .service-item{
     .row-item;
     width: 200px;
+    height: 400px;
 }
 
 .row-item-image{
-    margin: 50px 0px 50px 0px;
     max-width: 100%;
+    height: 130px;
+    padding: 50px 0px 50px 0px;
 }
 
 .row-item-image-circle{
